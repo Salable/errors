@@ -1,3 +1,8 @@
+[![CI Checks](https://github.com/Salable/errors/actions/workflows/ci.yml/badge.svg)](https://github.com/Salable/errors/actions/workflows/ci.yml)&nbsp;
+[![License Checker](https://github.com/Salable/errors/actions/workflows/license-checker.yml/badge.svg)](https://github.com/Salable/errors/actions/workflows/license-checker.yml)&nbsp;
+[![Release](https://github.com/Salable/errors/actions/workflows/release.yml/badge.svg)](https://github.com/Salable/errors/actions/workflows/release.yml)&nbsp;
+<img src="https://img.shields.io/npm/v/@salable/errors">
+
 # Salable Errors
 
 The Salable Errors allows you to properly return HTTPException classes for specific error messages in response to HTTP requests to improve error handling in an application.
