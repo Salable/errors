@@ -1,5 +1,3 @@
-# salable-errors
-
 # Salable Errors
 
 The Salable Errors allows you to properly return HTTPException classes for specific error messages in response to HTTP requests to improve error handling in an application.
