@@ -33,10 +33,10 @@ enum ClientStatusCode {
 type StatusType = keyof typeof ClientStatusCode;
 export class HTTPClientException extends Error {
   statusCode: number;
-  description?: IErrorBody;
+  description?: string;
   constructor(statusCode: StatusType, message: string, body?: IErrorBody) {
     super(message);
     this.statusCode = ClientStatusCode[statusCode];
-    this.description = body;
+    this.description = body?.description;
   }
 }

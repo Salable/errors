@@ -15,10 +15,10 @@ enum ServerStatusCode {
 }
 export class HTTPServerException extends Error {
   statusCode: number;
-  description?: IErrorBody;
+  description?: string;
   constructor(statusCode: keyof typeof ServerStatusCode, message: string, body?: IErrorBody) {
     super(message);
     this.statusCode = ServerStatusCode[statusCode];
-    this.description = body;
+    this.description = body?.description;
   }
 }

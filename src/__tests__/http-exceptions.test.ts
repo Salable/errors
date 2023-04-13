@@ -8,10 +8,10 @@ describe('HTTP Exception', () => {
         description:
           'Your changes were saved, but we could not connect your account due to a technical issue on our end. Please try connecting again.',
       };
-      const error = new HTTPClientException('NOT_FOUND', errorPayload.message, errorPayload);
+      const error = new HTTPClientException('NOT_FOUND', errorPayload.message, {description: errorPayload.description});
       expect(error.statusCode).toBe(404);
       expect(error.message).toBe(errorPayload.message);
-      expect(error.description).toBe(errorPayload);
+      expect(error.description).toBe(errorPayload.description);
     });
     it('Should set default values correctly', () => {
       const message = 'Bad request';
@@ -28,10 +28,12 @@ describe('HTTP Exception', () => {
         description:
           'No changes were made, but we could not connect your account due to a technical issue on our end. Please try connecting again.',
       };
-      const error = new HTTPServerException('INTERNAL_SERVER_ERROR', errorPayload.message, errorPayload);
+      const error = new HTTPServerException('INTERNAL_SERVER_ERROR', errorPayload.message, {
+        description: errorPayload.description,
+      });
       expect(error.statusCode).toBe(500);
       expect(error.message).toBe(errorPayload.message);
-      expect(error.description).toBe(errorPayload);
+      expect(error.description).toBe(errorPayload.description);
     });
     it('Should set default values correctly', () => {
       const message = 'Internal server error';
