@@ -1,6 +1,6 @@
 {
   "name": "@salable/errors",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "HTTPException classes for specific error messages in response to HTTP requests to improve error handling in an application.",
   "type": "module",
   "main": "dist/index.js",

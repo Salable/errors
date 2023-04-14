@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Salable/errors/compare/v1.0.2...v1.0.3) (2023-04-14)
+
+
+### Bug Fixes
+
+* unexpected token 'export' error ([0a90760](https://github.com/Salable/errors/commit/0a9076035807f7cb92c7c8ae14217696dcb6c401))
+
 ## [1.0.2](https://github.com/Salable/errors/compare/v1.0.1...v1.0.2) (2023-04-13)
 
 
