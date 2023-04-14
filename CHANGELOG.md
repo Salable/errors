@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/Salable/errors/compare/v1.0.1...v1.0.2) (2023-04-13)
+
+
+### Bug Fixes
+
+* add description to error message ([d730524](https://github.com/Salable/errors/commit/d73052418405493678cd710dfb0ff5a816805b05))
+
 ## [1.0.1](https://github.com/Salable/errors/compare/v1.0.0...v1.0.1) (2023-04-13)
 
 
